@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A&amp;M Construction &amp; Roofing | Fort Worth's Trusted Roofing Partner Since 2008</title>
+<meta name="description" content="A&M Construction & Roofing — Fort Worth, TX roofing experts since 2008. Roof installation, storm damage repair, decking repair and maintenance. Residential & commercial.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--dark:#4a1414;--darker:#331010;--accent:#e8a33d;--accent2:#c77f1a;--light:#faf6f1;--text:#2c3e50;--muted:#64748b;--white:#ffffff;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Poppins',Arial,sans-serif;color:var(--text);line-height:1.6;background:var(--white);}
+a{text-decoration:none;color:inherit;}
+.wrap{max-width:1150px;margin:0 auto;padding:0 22px;}
+header{position:sticky;top:0;z-index:100;background:rgba(74,20,20,.97);backdrop-filter:blur(6px);box-shadow:0 2px 12px rgba(0,0,0,.18);}
+nav{display:flex;align-items:center;justify-content:space-between;max-width:1150px;margin:0 auto;padding:14px 22px;}
+.logo{color:#fff;font-weight:800;font-size:1.12rem;letter-spacing:.3px;}
+.logo span{color:var(--accent);}
+.nav-links{display:flex;gap:26px;align-items:center;}
+.nav-links a{color:#f0e2d6;font-size:.92rem;font-weight:500;transition:color .2s;}
+.nav-links a:hover{color:var(--accent);}
+.nav-call{background:var(--accent);color:#331010!important;font-weight:700;padding:10px 20px;border-radius:8px;font-size:.9rem;transition:transform .2s,box-shadow .2s;}
+.nav-call:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(232,163,61,.4);color:#331010!important;}
+.hamburger{display:none;background:none;border:none;color:#fff;font-size:1.7rem;cursor:pointer;}
+.hero{background:linear-gradient(135deg,var(--darker) 0%,var(--dark) 55%,#7a2c1c 100%);color:#fff;padding:88px 0 78px;position:relative;overflow:hidden;}
+.hero::after{content:"";position:absolute;top:-80px;right:-80px;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(232,163,61,.25),transparent 70%);}
+.eyebrow{display:inline-block;background:rgba(232,163,61,.14);border:1px solid rgba(232,163,61,.55);color:var(--accent);font-size:.78rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:7px 16px;border-radius:30px;margin-bottom:20px;}
+.hero h1{font-size:clamp(2rem,5vw,3.3rem);font-weight:800;line-height:1.18;max-width:720px;margin-bottom:18px;}
+.hero h1 em{font-style:normal;color:var(--accent);}
+.hero p{color:#ecdcd0;font-size:1.08rem;max-width:640px;margin-bottom:32px;}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;}
+.btn{display:inline-block;font-weight:700;padding:14px 30px;border-radius:10px;font-size:1rem;transition:transform .2s,box-shadow .2s;}
+.btn-primary{background:var(--accent);color:#331010;box-shadow:0 6px 20px rgba(232,163,61,.35);}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(232,163,61,.5);}
+.btn-ghost{border:2px solid rgba(255,255,255,.45);color:#fff;}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent);}
+.trustbar{background:var(--white);box-shadow:0 4px 18px rgba(0,0,0,.08);border-radius:14px;max-width:1050px;margin:-36px auto 0;position:relative;z-index:5;display:grid;grid-template-columns:repeat(4,1fr);padding:26px 10px;}
+.trustbar div{text-align:center;padding:6px 12px;border-right:1px solid #e8eef5;}
+.trustbar div:last-child{border-right:none;}
+.trustbar strong{display:block;font-size:1.2rem;color:var(--dark);font-weight:800;}
+.trustbar span{font-size:.82rem;color:var(--muted);}
+section{padding:72px 0;}
+.sec-title{text-align:center;margin-bottom:14px;}
+.sec-title h2{font-size:clamp(1.6rem,3.4vw,2.4rem);color:var(--dark);font-weight:800;}
+.sec-title p{color:var(--muted);max-width:640px;margin:10px auto 0;}
+.services{background:var(--light);}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px;}
+.card{background:#fff;border-radius:14px;padding:32px 26px;box-shadow:0 4px 16px rgba(74,20,20,.07);border-top:4px solid var(--accent);transition:transform .25s,box-shadow .25s;}
+.card:hover{transform:translateY(-6px);box-shadow:0 12px 28px rgba(74,20,20,.14);}
+.card .icon{font-size:2rem;margin-bottom:12px;}
+.card h3{color:var(--dark);font-size:1.12rem;margin-bottom:10px;font-weight:700;}
+.card p{font-size:.93rem;color:var(--muted);}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:10px;}
+.about-grid h2{color:var(--dark);font-size:clamp(1.6rem,3.2vw,2.3rem);font-weight:800;margin-bottom:16px;}
+.about-grid p{color:var(--muted);margin-bottom:14px;}
+.checklist{list-style:none;margin-top:18px;}
+.checklist li{margin-bottom:12px;font-weight:500;color:var(--text);padding-left:32px;position:relative;}
+.checklist li::before{content:"\2713";position:absolute;left:0;top:0;color:#fff;background:var(--accent2);width:22px;height:22px;border-radius:50%;font-size:.75rem;display:flex;align-items:center;justify-content:center;font-weight:700;}
+.reviews{background:var(--dark);color:#fff;}
+.reviews .sec-title h2{color:#fff;}
+.reviews .sec-title p{color:#d6bfae;}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px;}
+.rev{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:28px 24px;}
+.stars{color:var(--accent);font-size:1.1rem;letter-spacing:2px;margin-bottom:12px;}
+.rev p{font-size:.94rem;color:#f0e2d6;margin-bottom:16px;font-style:italic;}
+.rev strong{display:block;color:#fff;font-size:.95rem;}
+.rev span{font-size:.8rem;color:#c4a892;}
+.process .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px;}
+.step{text-align:center;padding:10px;}
+.step .num{width:58px;height:58px;border-radius:50%;background:var(--accent);color:#331010;font-weight:800;font-size:1.4rem;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;}
+.step h3{color:var(--dark);font-size:1.02rem;margin-bottom:8px;}
+.step p{font-size:.88rem;color:var(--muted);}
+.contact{background:linear-gradient(135deg,var(--accent) 0%,var(--accent2) 100%);color:#331010;text-align:center;}
+.contact h2{font-size:clamp(1.7rem,3.6vw,2.5rem);font-weight:800;margin-bottom:12px;}
+.contact p{max-width:560px;margin:0 auto 30px;font-weight:500;}
+.contact-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+.btn-dark{background:#331010;color:#fff;}
+.btn-dark:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(0,0,0,.3);}
+footer{background:var(--darker);color:#c4a892;padding:38px 0;text-align:center;font-size:.88rem;}
+footer strong{color:#fff;}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease;}
+.reveal.visible{opacity:1;transform:none;}
+@media(max-width:900px){.svc-grid{grid-template-columns:repeat(2,1fr);}.rev-grid{grid-template-columns:1fr;}.process .steps{grid-template-columns:1fr;max-width:480px;margin:44px auto 0;}.about-grid{grid-template-columns:1fr;gap:28px;}.trustbar{grid-template-columns:repeat(2,1fr);gap:14px;margin:-36px 16px 0;}.trustbar div{border-right:none;}}
+@media(max-width:640px){.nav-links{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--dark);padding:18px;gap:16px;box-shadow:0 8px 20px rgba(0,0,0,.25);}.nav-links.open{display:flex;}.hamburger{display:block;}.svc-grid{grid-template-columns:1fr;}section{padding:54px 0;}}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<a class="logo" href="#top">A&amp;M <span>Construction &amp; Roofing</span></a>
+<div class="nav-links" id="navLinks">
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+<a class="nav-call" href="https://roofingchoice.com/">Get a Free Estimate</a>
+</div>
+<button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+</nav>
+</header>
+
+<section class="hero" id="top">
+<div class="wrap">
+<span class="eyebrow">Fort Worth, TX &bull; Since 2008</span>
+<h1>Fort Worth's Trusted Roofing Partner <em>Since 2008</em></h1>
+<p>With over 20 years of experience, A&amp;M Construction &amp; Roofing delivers top-notch roofing solutions for residential and commercial properties &mdash; from new installations to storm damage repair.</p>
+<div class="hero-btns">
+<a class="btn btn-primary" href="https://roofingchoice.com/">Get a Free Estimate</a>
+<a class="btn btn-ghost" href="#services">Explore Services</a>
+</div>
+</div>
+</section>
+
+<div class="wrap"><div class="trustbar reveal">
+<div><strong>Since 2008</strong><span>Serving Fort Worth</span></div>
+<div><strong>20+</strong><span>Years of Experience</span></div>
+<div><strong>Residential</strong><span>&amp; Commercial</span></div>
+<div><strong>Local</strong><span>Climate Experts</span></div>
+</div></div>
+
+<section class="services" id="services">
+<div class="wrap">
+<div class="sec-title reveal"><h2>Our Services</h2><p>Top-notch roofing solutions for every need.</p></div>
+<div class="svc-grid">
+<div class="card reveal"><div class="icon">&#127968;</div><h3>Roof Installation</h3><p>New roof installations with quality materials from trusted manufacturers &mdash; built for durability and longevity.</p></div>
+<div class="card reveal"><div class="icon">&#9928;</div><h3>Storm Damage Repair</h3><p>Fast, expert repair of hail and wind damage so your roof gets back to protecting your property.</p></div>
+<div class="card reveal"><div class="icon">&#128736;&#65039;</div><h3>Decking Repair</h3><p>Professional repair of damaged roof decking &mdash; the foundation your whole roof depends on.</p></div>
+<div class="card reveal"><div class="icon">&#128269;</div><h3>Roof Maintenance</h3><p>Regular maintenance and annual inspections that catch small problems before they turn into big ones.</p></div>
+<div class="card reveal"><div class="icon">&#127969;</div><h3>Residential Roofing</h3><p>Roofing solutions designed for Fort Worth homes, with personalized service from start to finish.</p></div>
+<div class="card reveal"><div class="icon">&#127970;</div><h3>Commercial Roofing</h3><p>Reliable roofing for commercial properties, backed by certified professionals and quality workmanship.</p></div>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="wrap">
+<div class="about-grid">
+<div class="reveal">
+<h2>Why Choose A&amp;M Construction &amp; Roofing?</h2>
+<p>Based in Fort Worth, TX, we understand the local climate and the unique challenges it poses to your roof. Our certified roofing professionals are dedicated to delivering quality workmanship on every project.</p>
+<ul class="checklist">
+<li><strong>Expertise:</strong> 20+ years of certified roofing experience</li>
+<li><strong>Quality materials:</strong> only the best from trusted manufacturers</li>
+<li><strong>Customer satisfaction:</strong> personalized solutions built around your needs</li>
+<li><strong>Competitive pricing:</strong> best value without compromising quality</li>
+<li><strong>Local experience:</strong> we know Fort Worth roofs inside and out</li>
+</ul>
+</div>
+<div class="reveal">
+<h2>Our 3-Step Process</h2>
+<ul class="checklist">
+<li><strong>Free inspection.</strong> We assess your roof's condition and explain what it needs.</li>
+<li><strong>Expert installation or repair.</strong> Certified crew, quality materials, daily attention to detail.</li>
+<li><strong>Final quality check.</strong> We make sure everything is right and you're completely satisfied.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section class="reviews" id="reviews">
+<div class="wrap">
+<div class="sec-title reveal"><h2>What Fort Worth Says About Us</h2><p>Real reviews from real neighbors.</p></div>
+<div class="rev-grid">
+<div class="rev reveal"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Honest &amp; hard working Christians. Fair pricing; I feel like I got my money's worth. Excellent customer service throughout the process."</p><strong>Shannon P.</strong><span>Fort Worth, TX</span></div>
+<div class="rev reveal"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Outstanding service superb communication great results. Highly recommended. Two thumbs up!"</p><strong>Mark B.</strong><span>Fort Worth, TX</span></div>
+<div class="rev reveal"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Very courteous, very prompt, great to work with and great people."</p><strong>Larry C.</strong><span>Fort Worth, TX</span></div>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="wrap reveal">
+<h2>Ready for a Roof You Can Trust?</h2>
+<p>Contact us through our website for a free estimate &mdash; we'll make sure your roof is in optimal condition.</p>
+<div class="contact-btns">
+<a class="btn btn-dark" href="https://roofingchoice.com/">Get a Free Estimate</a>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="wrap">
+<strong>A&amp;M Construction &amp; Roofing</strong><br>
+Fort Worth, TX &bull; Serving Residential &amp; Commercial Properties<br>
+&copy; <span id="yr">2026</span> A&amp;M Construction &amp; Roofing. All rights reserved.
+</div>
+</footer>
+
+<script>
+document.getElementById('hamburger').addEventListener('click',function(){document.getElementById('navLinks').classList.toggle('open');});
+document.getElementById('yr').textContent=new Date().getFullYear();
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('visible');io.unobserve(x.target);}});},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+</script>
+</body>
+</html>
